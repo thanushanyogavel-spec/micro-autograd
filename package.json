@@ -1,0 +1,35 @@
+{
+  "name": "micro-autograd",
+  "version": "1.0.0",
+  "description": "A reverse-mode automatic differentiation engine and neural network library written from scratch in TypeScript. Zero runtime dependencies.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node dist/test/run.js",
+    "xor": "npm run build && node dist/examples/xor.js",
+    "spiral": "npm run build && node dist/examples/spiral.js",
+    "bench": "npm run build && node dist/examples/bench.js"
+  },
+  "keywords": [
+    "autograd",
+    "automatic-differentiation",
+    "neural-network",
+    "machine-learning",
+    "from-scratch",
+    "typescript",
+    "zero-dependencies"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
